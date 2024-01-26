@@ -800,7 +800,7 @@ img {
     }
 
     .banner-container .custom-container .content {
-        flex: 1;
+        flex: 2;
         font-size: 50%;
     }
 }
