@@ -781,6 +781,10 @@ img {
     margin-bottom: .5rem;
 }
 
+.banner-container .custom-container .content a:hover {
+    background-color: var(--light-main);
+}
+
 @media (max-width: 767px) {
 
     .banner-container .custom-container {
