@@ -259,7 +259,8 @@ img {
     }
 }
 
-.navbar .icons a {
+.navbar .icons a,
+.navbar .icons #icon {
     color: var(--text-color);
     text-decoration: none;
     font-size: 20px;
@@ -268,7 +269,8 @@ img {
     transition: .3s;
 }
 
-.navbar .icons a:hover {
+.navbar .icons a:hover,
+.navbar .icons #icon:hover {
     color: var(--main-color);
 }
 
@@ -433,15 +435,8 @@ img {
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: center;
-}
-
-@media (min-width:321px) {
-    .landing .custom-container .content .brands {
-        white-space: nowrap;
-        gap: 2.5rem;
-    }
 }
 
 .landing .custom-container .content .brands a {
@@ -451,6 +446,7 @@ img {
     color: var(--text-color);
     cursor: pointer;
     transition: ease 0.3s;
+    white-space: nowrap;
 }
 
 .landing .custom-container .content .brands a:hover {

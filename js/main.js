@@ -1,6 +1,5 @@
 let darkMode = localStorage.getItem('darkMode');
 var icon = document.getElementById('icon');
-var btnIcon = document.getElementById('btn-icon');
 
 const enableDarkMode = () => {
     document.body.classList.add('dark-theme');
@@ -24,7 +23,7 @@ if (darkMode === 'enabled') {
     enableDarkMode()
 }
 
-btnIcon.addEventListener('click', () => {
+icon.addEventListener('click', () => {
     darkMode = localStorage.getItem('darkMode');
     if (darkMode !== 'enabled') {
         enableDarkMode();
@@ -34,9 +33,3 @@ btnIcon.addEventListener('click', () => {
     }
 
 });
-
-
-// btnIcon.onclick = function () {
-//     icon.classList.toggle('ri-sun-line');
-//     document.body.classList.toggle('dark-theme');
-// }
