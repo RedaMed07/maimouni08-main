@@ -657,6 +657,27 @@ img {
     box-shadow: rgba(93, 91, 91, 0.159) 0px 8px 24px;
     flex: 1;
     transition: ease .3s;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+
+.top-sales .card .product-img {
+    flex: 1;
+}
+@media (max-width: 767px){
+    .top-sales .card .product-img {
+        /* Soon  */
+    }
+}
+.top-sales .card .card-body {
+    /* background-color: red; */
+    flex-grow: 0;
+    flex-shrink: 1;
+
 }
 
 .top-sales .card:hover {
